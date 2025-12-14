@@ -49,8 +49,10 @@ class EnchantsBuilder:
         self.log_path = root / "enchants_build.log"
         self.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.captured_outputs: List[str] = []
+        self.mode: str = "check"
 
     def run(self, mode: str) -> None:
+        self.mode = mode
         header("NEWENCHANTS – ENCHANTS BUILD")
         if not self.validate():
             self.finish(False)
@@ -141,10 +143,12 @@ class EnchantsBuilder:
     # Build + test helpers
     # ------------------------------------------------------------------
     def build(self) -> bool:
+        if not self.clean_gradle():
+            return False
         header("GRADLE BUILD")
         self.build_started = True
         gradlew = "gradlew.bat" if os.name == "nt" else "./gradlew"
-        cmd = [gradlew, "clean", "build", "--no-daemon", "--stacktrace"]
+        cmd = [gradlew, "build", "--no-daemon", "--stacktrace"]
         try:
             result = subprocess.run(cmd, cwd=self.root, capture_output=True, text=True, check=False)
         except FileNotFoundError:
@@ -167,6 +171,22 @@ class EnchantsBuilder:
             self.warn("Test task reported failures")
 
     # ------------------------------------------------------------------
+    def clean_gradle(self) -> bool:
+        header("GRADLE CLEAN")
+        gradlew = "gradlew.bat" if os.name == "nt" else "./gradlew"
+        cmd = [gradlew, "clean", "--no-daemon", "--stacktrace"]
+        try:
+            result = subprocess.run(cmd, cwd=self.root, capture_output=True, text=True, check=False)
+        except FileNotFoundError:
+            self.fail("Gradle wrapper not found; run ./gradlew once first")
+            return False
+        if result.returncode == 0:
+            log("Gradle clean succeeded", Color.GREEN)
+            return True
+        self.fail("Gradle clean failed – see log")
+        self.log_output(result.stdout, result.stderr)
+        return False
+
     def finish(self, ok: bool) -> None:
         header("SUMMARY")
         status = "SUCCESS" if ok and not self.errors else "FAILED"
@@ -188,6 +208,8 @@ class EnchantsBuilder:
             if self.captured_outputs:
                 fh.write("\nCaptured task output:\n")
                 fh.write("\n\n".join(self.captured_outputs) + "\n")
+        if status == "SUCCESS" and self.mode == "full":
+            self.run_git_auto_push()
         if not ok:
             sys.exit(1)
 
@@ -208,6 +230,25 @@ class EnchantsBuilder:
             sections.append("=== STDERR ===\n" + stderr.strip())
         if sections:
             self.captured_outputs.append("\n\n".join(sections))
+
+    def run_git_auto_push(self) -> None:
+        header("AUTO GIT PUSH")
+        display_cmd = 'git add .; git commit -m "fix"; git push -u origin main'
+        log(f"Running: {display_cmd}", Color.CYAN)
+        commands = [
+            ["git", "add", "."],
+            ["git", "commit", "-m", "fix"],
+            ["git", "push", "-u", "origin", "main"],
+        ]
+        for cmd in commands:
+            result = subprocess.run(cmd, cwd=self.root, capture_output=True, text=True)
+            if result.stdout:
+                log(result.stdout.strip())
+            if result.stderr:
+                log(result.stderr.strip(), Color.YELLOW)
+            if result.returncode != 0 and "nothing to commit" not in (result.stdout + result.stderr).lower():
+                self.warn(f"Git command failed: {' '.join(cmd)} (exit {result.returncode})")
+                break
 
 
 def parse_args() -> argparse.Namespace:
