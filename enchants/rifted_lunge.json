@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:rifted_lunge",
+  "slug": "rifted_lunge",
+  "name": "Rifted Lunge",
+  "index": 6,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Hitting the same target twice within 3s enables a right-click blink 2 blocks through the enemy, dealing +1 heart damage (8s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Blink range increases to 3 blocks, bonus damage becomes 1.5 hearts, cooldown drops to 6s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Chorus Fruit",
+        "Eye of Ender",
+        "Chorus Fruit"
+      ],
+      [
+        "Resonance Shard",
+        "Enchanted Book",
+        "Resonance Shard"
+      ],
+      [
+        "Ender Pearl",
+        "Smithing Template: Wayfinder Armor Trim",
+        "Ender Pearl"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:rifted_lunge"
+    }
+  }
+}

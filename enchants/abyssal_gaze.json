@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:abyssal_gaze",
+  "slug": "abyssal_gaze",
+  "name": "Abyssal Gaze",
+  "index": 33,
+  "gear_family": "Helmets",
+  "applies_to": "All helmets",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Hostile mobs that look at you within 10 blocks receive Slowness I for 3s (10s cooldown per mob)."
+    },
+    {
+      "level": 2,
+      "summary": "Radius increases to 15 blocks, Slowness II lasts 4s, and Endermen stop teleporting for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Sculk Shrieker",
+        "Sculk Catalyst",
+        "Sculk Shrieker"
+      ],
+      [
+        "Eye of Ender",
+        "Enchanted Book",
+        "Eye of Ender"
+      ],
+      [
+        "Ominous Bottle",
+        "Nether Star",
+        "Ominous Bottle"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:abyssal_gaze"
+    }
+  }
+}

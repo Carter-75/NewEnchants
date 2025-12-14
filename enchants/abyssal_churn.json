@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:abyssal_churn",
+  "slug": "abyssal_churn",
+  "name": "Abyssal Churn",
+  "index": 28,
+  "gear_family": "Tridents",
+  "applies_to": "Tridents",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Hits dealt while both entities are in water add a whirlpool stack that slows by 10% (max 3) for 4s."
+    },
+    {
+      "level": 2,
+      "summary": "Slow becomes 15%, stacks deal 0.5 hearts drowning damage/second."
+    },
+    {
+      "level": 3,
+      "summary": "Slow becomes 20%, stacks pull the target 0.3 blocks toward the wielder each tick."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Heart of the Sea",
+        "Nautilus Shell",
+        "Heart of the Sea"
+      ],
+      [
+        "Prismarine Brick",
+        "Enchanted Book",
+        "Prismarine Brick"
+      ],
+      [
+        "Conduit",
+        "Echo Shard",
+        "Conduit"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:abyssal_churn"
+    }
+  }
+}

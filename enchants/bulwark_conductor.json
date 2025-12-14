@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:bulwark_conductor",
+  "slug": "bulwark_conductor",
+  "name": "Bulwark Conductor",
+  "index": 43,
+  "gear_family": "Shields",
+  "applies_to": "Shields",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Blocking melee attacks stores a lightning charge (max 2); raising the shield again releases a chain bolt dealing 1 heart in a 3-block radius after reaching max charges."
+    },
+    {
+      "level": 2,
+      "summary": "Charge cap 3, release deals 1.5 hearts and applies Weakness I for 2s."
+    },
+    {
+      "level": 3,
+      "summary": "Charge cap 4, release deals 2 hearts, arcs twice, and grants Resistance I for 3s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Resonance Shard",
+        "Breeze Rod",
+        "Resonance Shard"
+      ],
+      [
+        "Netherite Ingot",
+        "Enchanted Book",
+        "Netherite Ingot"
+      ],
+      [
+        "Heart of the Sea",
+        "Totem of Undying",
+        "Heart of the Sea"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:bulwark_conductor"
+    }
+  }
+}

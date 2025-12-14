@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:tempest_volley",
+  "slug": "tempest_volley",
+  "name": "Tempest Volley",
+  "index": 9,
+  "gear_family": "Bows",
+  "applies_to": "All bows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Rapid consecutive shots (under 2s apart) gain +5% draw speed and +5% damage stacking three times."
+    },
+    {
+      "level": 2,
+      "summary": "Bonuses become +8% draw speed/+8% damage stacking four times; max stack releases a gust dealing 1 heart knockback damage."
+    },
+    {
+      "level": 3,
+      "summary": "Bonuses reach +12% draw speed/+10% damage stacking five times; max stack adds a 0.5s slow to hit targets."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Breeze Rod",
+        "Phantom Membrane",
+        "Breeze Rod"
+      ],
+      [
+        "Wind Charge",
+        "Enchanted Book",
+        "Wind Charge"
+      ],
+      [
+        "Ominous Trial Key",
+        "Echo Shard",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:tempest_volley"
+    }
+  }
+}

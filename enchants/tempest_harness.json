@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:tempest_harness",
+  "slug": "tempest_harness",
+  "name": "Tempest Harness",
+  "index": 39,
+  "gear_family": "Leggings",
+  "applies_to": "All leggings",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Sprinting for 3s grants a 1s burst of +20% speed."
+    },
+    {
+      "level": 2,
+      "summary": "Sprint requirement 2s, burst +30% speed and negates slows for 1s."
+    },
+    {
+      "level": 3,
+      "summary": "Sprint requirement 1s, burst +40% speed and adds a 0.5-block dash."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Breeze Rod",
+        "Wind Charge",
+        "Breeze Rod"
+      ],
+      [
+        "Goat Horn",
+        "Enchanted Book",
+        "Goat Horn"
+      ],
+      [
+        "Trial Key",
+        "Netherite Scrap",
+        "Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:tempest_harness"
+    }
+  }
+}

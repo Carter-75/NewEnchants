@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:silk_gardener",
+  "slug": "silk_gardener",
+  "name": "Silk Gardener",
+  "index": 48,
+  "gear_family": "Shears",
+  "applies_to": "Shears",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Harvesting plants drops one additional loot roll and guarantees preservation of hanging decorations."
+    },
+    {
+      "level": 2,
+      "summary": "Grants two additional loot rolls and auto-replants vines and glow berries."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Sniffer Egg",
+        "Pitcher Pod",
+        "Sniffer Egg"
+      ],
+      [
+        "Netherite Ingot",
+        "Enchanted Book",
+        "Netherite Ingot"
+      ],
+      [
+        "Smithing Template: Silence Armor Trim",
+        "Totem of Undying",
+        "Smithing Template: Silence Armor Trim"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:silk_gardener"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:thunder_chop",
+  "slug": "thunder_chop",
+  "name": "Thunder Chop",
+  "index": 19,
+  "gear_family": "Axes",
+  "applies_to": "All axes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Critical hits on wet targets summon a weak lightning strike dealing 2 hearts in a 2-block radius (no fire spread)."
+    },
+    {
+      "level": 2,
+      "summary": "Lightning can trigger regardless of wet status on a 30% proc chance, dealing 3 hearts and applying Shock for 1s."
+    },
+    {
+      "level": 3,
+      "summary": "Lightning always triggers on crits, deals 3 hearts to the main target and chains 2 hearts to two nearby mobs."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Lightning Rod",
+        "Breeze Rod",
+        "Lightning Rod"
+      ],
+      [
+        "Heart of the Sea",
+        "Enchanted Book",
+        "Heart of the Sea"
+      ],
+      [
+        "Nether Star",
+        "Echo Shard",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:thunder_chop"
+    }
+  }
+}

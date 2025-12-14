@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:impact_bloom",
+  "slug": "impact_bloom",
+  "name": "Impact Bloom",
+  "index": 49,
+  "gear_family": "Maces",
+  "applies_to": "Maces",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "After falling at least 2 blocks, the next mace hit creates a shockwave dealing 2 hearts in a 3-block radius (8s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Shockwave damage 3 hearts, radius 4 blocks, cooldown 6s."
+    },
+    {
+      "level": 3,
+      "summary": "Damage 4 hearts, radius 5 blocks, also plants a lingering damage cloud for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Heavy Core",
+        "Breeze Rod",
+        "Heavy Core"
+      ],
+      [
+        "Ancient Debris",
+        "Enchanted Book",
+        "Ancient Debris"
+      ],
+      [
+        "Ominous Trial Key",
+        "Netherite Ingot",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:impact_bloom"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:lode_harmonizer",
+  "slug": "lode_harmonizer",
+  "name": "Lode Harmonizer",
+  "index": 20,
+  "gear_family": "Pickaxes",
+  "applies_to": "All pickaxes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Mining any ore highlights matching veins within 8 blocks for 5s and grants Fortune +1 to the next block."
+    },
+    {
+      "level": 2,
+      "summary": "Radius 12 blocks, highlight lasts 6s, Fortune +1 applies to the next two blocks."
+    },
+    {
+      "level": 3,
+      "summary": "Radius 16 blocks, highlight lasts 8s, Fortune +2 for the next two blocks."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Lodestone",
+        "Resonance Shard",
+        "Lodestone"
+      ],
+      [
+        "Echo Shard",
+        "Enchanted Book",
+        "Echo Shard"
+      ],
+      [
+        "Smithing Template: Coast Armor Trim",
+        "Trial Key",
+        "Smithing Template: Coast Armor Trim"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:lode_harmonizer"
+    }
+  }
+}

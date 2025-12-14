@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:mirror_guard",
+  "slug": "mirror_guard",
+  "name": "Mirror Guard",
+  "index": 44,
+  "gear_family": "Shields",
+  "applies_to": "Shields",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Blocking a projectile within 0.5s reflects 50% of its damage back to the source."
+    },
+    {
+      "level": 2,
+      "summary": "Window increases to 0.75s, reflects 75% of damage and bounces splash potion effects."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Shulker Shell",
+        "Echo Shard",
+        "Shulker Shell"
+      ],
+      [
+        "Smithing Template: Ward Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Ward Armor Trim"
+      ],
+      [
+        "Ominous Trial Key",
+        "Netherite Scrap",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:mirror_guard"
+    }
+  }
+}

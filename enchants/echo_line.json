@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:echo_line",
+  "slug": "echo_line",
+  "name": "Echo Line",
+  "index": 47,
+  "gear_family": "Fishing Rods",
+  "applies_to": "Fishing rods",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Reeling automatically hooks a second bubble if present, granting double loot rolls (best result kept)."
+    },
+    {
+      "level": 2,
+      "summary": "Hooks up to three bubbles, best result kept, and grants 3s Night Vision underwater."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Resonance Shard",
+        "Calibrated Sculk Sensor",
+        "Resonance Shard"
+      ],
+      [
+        "Trial Key",
+        "Enchanted Book",
+        "Trial Key"
+      ],
+      [
+        "Heart of the Sea",
+        "Ominous Bottle",
+        "Heart of the Sea"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:echo_line"
+    }
+  }
+}

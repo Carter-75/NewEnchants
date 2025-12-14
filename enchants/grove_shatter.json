@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:grove_shatter",
+  "slug": "grove_shatter",
+  "name": "Grove Shatter",
+  "index": 17,
+  "gear_family": "Axes",
+  "applies_to": "All axes",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Deals +40% damage to wooden constructs and +20% to golems; fells connected logs in a 3-block column."
+    },
+    {
+      "level": 2,
+      "summary": "+60% construct damage, +35% to golems, fells logs in a 5-block column and roots targets for 1s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Ancient Debris",
+        "Sniffer Egg",
+        "Ancient Debris"
+      ],
+      [
+        "Smithing Template: Silence Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Silence Armor Trim"
+      ],
+      [
+        "Totem of Undying",
+        "Spore Blossom",
+        "Totem of Undying"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:grove_shatter"
+    }
+  }
+}

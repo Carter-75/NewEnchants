@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:terra_surge",
+  "slug": "terra_surge",
+  "name": "Terra Surge",
+  "index": 24,
+  "gear_family": "Shovels",
+  "applies_to": "All shovels",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Each block of dirt, sand, or gravel mined grants a stack (+0.5% dig speed, max 20) until damage is taken."
+    },
+    {
+      "level": 2,
+      "summary": "Stack bonus becomes +0.75% and falling blocks mined drop as items instead of entities."
+    },
+    {
+      "level": 3,
+      "summary": "Stack bonus becomes +1% and falling blocks solidify instantly, preventing suffocation."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Sniffer Egg",
+        "Ominous Bottle",
+        "Sniffer Egg"
+      ],
+      [
+        "Smithing Template: Dune Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Dune Armor Trim"
+      ],
+      [
+        "Ancient Debris",
+        "Trial Key",
+        "Ancient Debris"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:terra_surge"
+    }
+  }
+}

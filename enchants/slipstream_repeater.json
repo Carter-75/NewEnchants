@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:slipstream_repeater",
+  "slug": "slipstream_repeater",
+  "name": "Slipstream Repeater",
+  "index": 15,
+  "gear_family": "Crossbows",
+  "applies_to": "All crossbows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Reload speed +20% and multishot/rocket cooldown -15%."
+    },
+    {
+      "level": 2,
+      "summary": "Reload speed +35%, cooldown -25%, 5% chance to refund a firework rocket."
+    },
+    {
+      "level": 3,
+      "summary": "Reload speed +50%, cooldown -35%, 10% rocket refund chance and grants 2s Slow Falling on firework launch."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Wind Charge",
+        "Calibrated Sculk Sensor",
+        "Wind Charge"
+      ],
+      [
+        "Smithing Template: Wayfinder Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Wayfinder Armor Trim"
+      ],
+      [
+        "Breeze Rod",
+        "Echo Shard",
+        "Breeze Rod"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:slipstream_repeater"
+    }
+  }
+}

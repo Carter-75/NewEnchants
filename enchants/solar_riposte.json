@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:solar_riposte",
+  "slug": "solar_riposte",
+  "name": "Solar Riposte",
+  "index": 8,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Guarding within 0.5s of a hit reflects 20% of prevented damage as fire damage."
+    },
+    {
+      "level": 2,
+      "summary": "Window increases to 0.65s, reflects 30% as radiant damage and grants 1s Fire Resistance."
+    },
+    {
+      "level": 3,
+      "summary": "Window widens to 0.8s, reflects 40% mixed damage and applies Blindness for 1s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Ominous Bottle",
+        "Blaze Rod",
+        "Ominous Bottle"
+      ],
+      [
+        "Gilded Blackstone",
+        "Enchanted Book",
+        "Gilded Blackstone"
+      ],
+      [
+        "Smithing Template: Spire Armor Trim",
+        "Nether Star",
+        "Smithing Template: Spire Armor Trim"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:solar_riposte"
+    }
+  }
+}

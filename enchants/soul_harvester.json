@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:soul_harvester",
+  "slug": "soul_harvester",
+  "name": "Soul Harvester",
+  "index": 27,
+  "gear_family": "Hoes",
+  "applies_to": "All hoes",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Nether wart and soul plants drop +1 experience orb and have a 10% chance to spawn a harmless soul flame that damages nearby mobs for 1 heart."
+    },
+    {
+      "level": 2,
+      "summary": "Experience bonus becomes +2, flame chance 25%, flame damage 1.5 hearts and applies Wither I for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Wither Rose",
+        "Ghast Tear",
+        "Wither Rose"
+      ],
+      [
+        "Soul Lantern",
+        "Enchanted Book",
+        "Soul Lantern"
+      ],
+      [
+        "Nether Star",
+        "Ominous Bottle",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:soul_harvester"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:umbral_pin",
+  "slug": "umbral_pin",
+  "name": "Umbral Pin",
+  "index": 11,
+  "gear_family": "Bows",
+  "applies_to": "All bows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "First arrow that hits a target marks it for 6s; striking again while marked roots it for 0.8s and adds +2 magic damage."
+    },
+    {
+      "level": 2,
+      "summary": "Mark lasts 8s, root lasts 1.2s, bonus damage becomes +3; mark also reveals invisible targets."
+    },
+    {
+      "level": 3,
+      "summary": "Mark lasts 10s, root lasts 1.6s, bonus damage +4 and applies Darkness for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Sculk Catalyst",
+        "Echo Shard",
+        "Sculk Catalyst"
+      ],
+      [
+        "Eye of Ender",
+        "Enchanted Book",
+        "Eye of Ender"
+      ],
+      [
+        "Calibrated Sculk Sensor",
+        "Ominous Bottle",
+        "Calibrated Sculk Sensor"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:umbral_pin"
+    }
+  }
+}

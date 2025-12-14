@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:voidbreaker",
+  "slug": "voidbreaker",
+  "name": "Voidbreaker",
+  "index": 3,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Deals +25% damage to targets with active Resistance, shields, or absorption and disables shields for 1.5s."
+    },
+    {
+      "level": 2,
+      "summary": "Bonus becomes +35%; shield disable lasts 2.5s and prevents projectile blocking for the duration."
+    },
+    {
+      "level": 3,
+      "summary": "Bonus reaches +45%; shields stay disabled 3.5s and the target gains Weakness I for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Crying Obsidian",
+        "End Crystal",
+        "Crying Obsidian"
+      ],
+      [
+        "Echo Shard",
+        "Enchanted Book",
+        "Echo Shard"
+      ],
+      [
+        "Dragon Head",
+        "Amethyst Cluster",
+        "Dragon Head"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:voidbreaker"
+    }
+  }
+}

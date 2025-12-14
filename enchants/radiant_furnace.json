@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:radiant_furnace",
+  "slug": "radiant_furnace",
+  "name": "Radiant Furnace",
+  "index": 35,
+  "gear_family": "Chestplates",
+  "applies_to": "All chestplates",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Emits a 2-block heat aura that deals 1 heart fire damage every 3s and grants Fire Resistance I for 3s."
+    },
+    {
+      "level": 2,
+      "summary": "Aura radius 3 blocks, deals 1.5 hearts every 2s, Fire Resistance lasts 5s and ignites attackers."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Blaze Rod",
+        "Magma Cream",
+        "Blaze Rod"
+      ],
+      [
+        "Lava Bucket",
+        "Enchanted Book",
+        "Lava Bucket"
+      ],
+      [
+        "Ominous Trial Key",
+        "Netherite Ingot",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:radiant_furnace"
+    }
+  }
+}

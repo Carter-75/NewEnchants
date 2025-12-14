@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:bloom_binder",
+  "slug": "bloom_binder",
+  "name": "Bloom Binder",
+  "index": 26,
+  "gear_family": "Hoes",
+  "applies_to": "All hoes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Right-click mature crops to bank one growth charge (max 3) that can instantly grow another crop."
+    },
+    {
+      "level": 2,
+      "summary": "Charge cap becomes 5, farmland touched by the hoe cannot be trampled for 30s."
+    },
+    {
+      "level": 3,
+      "summary": "Charge cap becomes 7 and charges auto-replant harvested crops in a 3x3 area."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Pitcher Pod",
+        "Sniffer Egg",
+        "Pitcher Pod"
+      ],
+      [
+        "Smithing Template: Silence Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Silence Armor Trim"
+      ],
+      [
+        "Totem of Undying",
+        "Nether Star",
+        "Totem of Undying"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:bloom_binder"
+    }
+  }
+}

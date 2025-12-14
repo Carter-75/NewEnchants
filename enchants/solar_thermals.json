@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:solar_thermals",
+  "slug": "solar_thermals",
+  "name": "Solar Thermals",
+  "index": 45,
+  "gear_family": "Elytra",
+  "applies_to": "Elytra (can coexist with vanilla enchants)",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Gliding in daylight generates heat stacks every 2s (max 3); using a firework consumes stacks to grant +10% speed per stack for 2s."
+    },
+    {
+      "level": 2,
+      "summary": "Heat stacks generate every 1.5s (max 4) and provide Slow Falling for 2s after consumption."
+    },
+    {
+      "level": 3,
+      "summary": "Heat stacks generate every 1s (max 5) and grant temporary Fire Resistance plus +15% speed per stack."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Phantom Membrane",
+        "Dragon Breath",
+        "Phantom Membrane"
+      ],
+      [
+        "End Crystal",
+        "Enchanted Book",
+        "End Crystal"
+      ],
+      [
+        "Nether Star",
+        "Ominous Bottle",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:solar_thermals"
+    }
+  }
+}

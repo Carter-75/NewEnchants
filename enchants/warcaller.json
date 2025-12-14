@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:warcaller",
+  "slug": "warcaller",
+  "name": "Warcaller",
+  "index": 18,
+  "gear_family": "Axes",
+  "applies_to": "All axes",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Landing a killing blow emits a battle shout granting Strength I for 8s to allies within 8 blocks (20s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Shout grants Strength II for 10s plus Resistance I for 5s (18s cooldown)."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Goat Horn",
+        "Ominous Banner Pattern",
+        "Goat Horn"
+      ],
+      [
+        "Totem of Undying",
+        "Enchanted Book",
+        "Totem of Undying"
+      ],
+      [
+        "Block of Emerald",
+        "Ominous Trial Key",
+        "Block of Emerald"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:warcaller"
+    }
+  }
+}

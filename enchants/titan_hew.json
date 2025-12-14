@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:titan_hew",
+  "slug": "titan_hew",
+  "name": "Titan Hew",
+  "index": 16,
+  "gear_family": "Axes",
+  "applies_to": "All axes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Sneaking for 1s charges +25% damage on the next swing and adds 1 block cleave (6s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Charge grants +35% damage, cleave radius 2 blocks, cooldown 5s."
+    },
+    {
+      "level": 3,
+      "summary": "Charge grants +45% damage, cleave radius 3 blocks, cooldown 4s and adds Knockback II."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Heavy Core",
+        "Block of Netherite",
+        "Heavy Core"
+      ],
+      [
+        "Ancient Debris",
+        "Enchanted Book",
+        "Ancient Debris"
+      ],
+      [
+        "Smithing Template: Dune Armor Trim",
+        "Trial Key",
+        "Smithing Template: Dune Armor Trim"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:titan_hew"
+    }
+  }
+}

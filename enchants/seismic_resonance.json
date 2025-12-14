@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:seismic_resonance",
+  "slug": "seismic_resonance",
+  "name": "Seismic Resonance",
+  "index": 21,
+  "gear_family": "Pickaxes",
+  "applies_to": "All pickaxes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Sneak-mining stone triggers a 1-block horizontal shockwave, breaking adjacent stone (costs +1 durability per extra block)."
+    },
+    {
+      "level": 2,
+      "summary": "Shockwave radius becomes 2 blocks and slows nearby enemies by 20% for 2s."
+    },
+    {
+      "level": 3,
+      "summary": "Radius becomes 3 blocks, slow becomes 30% for 3s, and highlights caves with Glowing for 4s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Heavy Core",
+        "Echo Shard",
+        "Heavy Core"
+      ],
+      [
+        "Reinforced Deepslate",
+        "Enchanted Book",
+        "Reinforced Deepslate"
+      ],
+      [
+        "Ancient Debris",
+        "Trial Key",
+        "Ancient Debris"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:seismic_resonance"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:glacial_crest",
+  "slug": "glacial_crest",
+  "name": "Glacial Crest",
+  "index": 41,
+  "gear_family": "Boots",
+  "applies_to": "All boots",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Leaves temporary packed ice behind the player for 3s and grants Frost Walker I."
+    },
+    {
+      "level": 2,
+      "summary": "Creates blue ice for 4s, grants Frost Walker II and 1 heart of cold retaliation damage."
+    },
+    {
+      "level": 3,
+      "summary": "Creates icy trails for 5s, slows nearby mobs by 20%, and grants immunity to powdered snow."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Blue Ice",
+        "Heart of the Sea",
+        "Blue Ice"
+      ],
+      [
+        "Smithing Template: Tide Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Tide Armor Trim"
+      ],
+      [
+        "Packed Ice",
+        "Netherite Ingot",
+        "Packed Ice"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:glacial_crest"
+    }
+  }
+}

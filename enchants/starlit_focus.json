@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:starlit_focus",
+  "slug": "starlit_focus",
+  "name": "Starlit Focus",
+  "index": 32,
+  "gear_family": "Helmets",
+  "applies_to": "All helmets",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Grants passive Night Vision at night and highlights mobs within 12 blocks when sneaking."
+    },
+    {
+      "level": 2,
+      "summary": "Night Vision extends underground, highlight radius 18 blocks, and grants +5% ranged crit chance."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Amethyst Cluster",
+        "Smithing Template: Wayfinder Armor Trim",
+        "Amethyst Cluster"
+      ],
+      [
+        "Spyglass",
+        "Enchanted Book",
+        "Spyglass"
+      ],
+      [
+        "Heart of the Sea",
+        "Dragon Breath",
+        "Heart of the Sea"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:starlit_focus"
+    }
+  }
+}

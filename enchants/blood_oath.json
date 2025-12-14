@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:blood_oath",
+  "slug": "blood_oath",
+  "name": "Blood Oath",
+  "index": 2,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Striking enemies under 40% health deals +1 heart true damage and heals you for 1 heart (5s cooldown per target)."
+    },
+    {
+      "level": 2,
+      "summary": "Threshold rises to 60%; extra true damage becomes 1.5 hearts and the heal becomes 1.5 hearts (4s cooldown)."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Wither Rose",
+        "Totem of Undying",
+        "Wither Rose"
+      ],
+      [
+        "Netherite Scrap",
+        "Enchanted Book",
+        "Netherite Scrap"
+      ],
+      [
+        "Enchanted Golden Apple",
+        "Heart of the Sea",
+        "Enchanted Golden Apple"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:blood_oath"
+    }
+  }
+}

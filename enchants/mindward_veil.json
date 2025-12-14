@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:mindward_veil",
+  "slug": "mindward_veil",
+  "name": "Mindward Veil",
+  "index": 31,
+  "gear_family": "Helmets",
+  "applies_to": "Turtle Shells and all helmets",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "25% chance to negate Blindness, Darkness, or Nausea effects, granting 5s Resistance I on success (10s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Chance rises to 50%, Resistance lasts 6s and also grants Water Breathing for 4s."
+    },
+    {
+      "level": 3,
+      "summary": "Chance rises to 75%, Resistance lasts 8s and grants Status Effect immunity for 2s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Echo Shard",
+        "Calibrated Sculk Sensor",
+        "Echo Shard"
+      ],
+      [
+        "Turtle Shell",
+        "Enchanted Book",
+        "Turtle Shell"
+      ],
+      [
+        "Nether Star",
+        "Resonance Shard",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:mindward_veil"
+    }
+  }
+}

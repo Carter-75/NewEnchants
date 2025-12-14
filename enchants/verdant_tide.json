@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:verdant_tide",
+  "slug": "verdant_tide",
+  "name": "Verdant Tide",
+  "index": 12,
+  "gear_family": "Bows",
+  "applies_to": "All bows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Arrows spawn a 3-block vine snare for 3s, slowing mobs by 20%."
+    },
+    {
+      "level": 2,
+      "summary": "Snare radius grows to 4 blocks, slow becomes 30%, and deals 0.5 hearts/second to undead."
+    },
+    {
+      "level": 3,
+      "summary": "Radius 5 blocks, slow 40%, damage 1 heart/second to hostile mobs and weakens armor by 5% for 4s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Ancient Debris",
+        "Smithing Template: Silence Armor Trim",
+        "Ancient Debris"
+      ],
+      [
+        "Pitcher Pod",
+        "Enchanted Book",
+        "Pitcher Pod"
+      ],
+      [
+        "Sniffer Egg",
+        "Ominous Trial Key",
+        "Sniffer Egg"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:verdant_tide"
+    }
+  }
+}

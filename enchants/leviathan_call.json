@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:leviathan_call",
+  "slug": "leviathan_call",
+  "name": "Leviathan Call",
+  "index": 30,
+  "gear_family": "Tridents",
+  "applies_to": "Tridents",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Using Riptide grants Dolphins Grace for 3s and heals 1 heart."
+    },
+    {
+      "level": 2,
+      "summary": "Dolphins Grace lasts 5s, also grants Conduit Power I for 4s."
+    },
+    {
+      "level": 3,
+      "summary": "Dolphins Grace lasts 7s, Conduit Power I lasts 6s, and summons two temporary guardian spirits dealing 1 heart each."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Conduit",
+        "Heart of the Sea",
+        "Conduit"
+      ],
+      [
+        "Turtle Shell",
+        "Enchanted Book",
+        "Turtle Shell"
+      ],
+      [
+        "Sniffer Egg",
+        "Ominous Trial Key",
+        "Sniffer Egg"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:leviathan_call"
+    }
+  }
+}

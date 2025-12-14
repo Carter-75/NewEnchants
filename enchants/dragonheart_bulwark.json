@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:dragonheart_bulwark",
+  "slug": "dragonheart_bulwark",
+  "name": "Dragonheart Bulwark",
+  "index": 34,
+  "gear_family": "Chestplates",
+  "applies_to": "All chestplates and Elytra-chest hybrids",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Grants 2 hearts Absorption after avoiding damage for 10s; refresh cooldown 20s."
+    },
+    {
+      "level": 2,
+      "summary": "Absorption becomes 4 hearts, cooldown 18s, and adds 5% projectile resistance."
+    },
+    {
+      "level": 3,
+      "summary": "Absorption becomes 6 hearts, cooldown 15s, projectile resistance 10%."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Dragon Head",
+        "Nether Star",
+        "Dragon Head"
+      ],
+      [
+        "Totem of Undying",
+        "Enchanted Book",
+        "Totem of Undying"
+      ],
+      [
+        "Ancient Debris",
+        "Heart of the Sea",
+        "Ancient Debris"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:dragonheart_bulwark"
+    }
+  }
+}

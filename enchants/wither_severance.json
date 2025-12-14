@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:wither_severance",
+  "slug": "wither_severance",
+  "name": "Wither Severance",
+  "index": 7,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "+25% damage versus Wither bosses, Wither Skeletons, Wardens, and the Ender Dragon; clears Wither effect from the wielder on kill."
+    },
+    {
+      "level": 2,
+      "summary": "+40% damage versus those targets and reflects Wither II back to the attacker for 3s (12s cooldown)."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Wither Skeleton Skull",
+        "Nether Star",
+        "Wither Skeleton Skull"
+      ],
+      [
+        "Reinforced Deepslate",
+        "Enchanted Book",
+        "Reinforced Deepslate"
+      ],
+      [
+        "Echo Shard",
+        "Block of Netherite",
+        "Echo Shard"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:wither_severance"
+    }
+  }
+}

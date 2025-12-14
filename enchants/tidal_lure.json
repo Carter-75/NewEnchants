@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:tidal_lure",
+  "slug": "tidal_lure",
+  "name": "Tidal Lure",
+  "index": 46,
+  "gear_family": "Fishing Rods",
+  "applies_to": "Fishing rods",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Bites occur 20% faster and treasure loot tables gain +5% weight."
+    },
+    {
+      "level": 2,
+      "summary": "Bites 35% faster, treasure weight +12%, junk chance -10%."
+    },
+    {
+      "level": 3,
+      "summary": "Bites 50% faster, treasure weight +20%, junk chance -20% and grants Water Breathing for 5s on catch."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Heart of the Sea",
+        "Nautilus Shell",
+        "Heart of the Sea"
+      ],
+      [
+        "Prismarine Crystal",
+        "Enchanted Book",
+        "Prismarine Crystal"
+      ],
+      [
+        "Ominous Trial Key",
+        "Echo Shard",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:tidal_lure"
+    }
+  }
+}

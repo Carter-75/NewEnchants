@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:prism_splitter",
+  "slug": "prism_splitter",
+  "name": "Prism Splitter",
+  "index": 22,
+  "gear_family": "Pickaxes",
+  "applies_to": "All pickaxes",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Amethyst clusters drop +1 shard and ores have a 15% chance to duplicate their raw drop (once every 10s)."
+    },
+    {
+      "level": 2,
+      "summary": "Shards +2, duplication chance 30%, and geodes have a 10% chance to drop an extra budding block."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Amethyst Cluster",
+        "Dragon Breath",
+        "Amethyst Cluster"
+      ],
+      [
+        "Smithing Template: Silence Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Silence Armor Trim"
+      ],
+      [
+        "Heart of the Sea",
+        "Echo Shard",
+        "Heart of the Sea"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:prism_splitter"
+    }
+  }
+}

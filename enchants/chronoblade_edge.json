@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:chronoblade_edge",
+  "slug": "chronoblade_edge",
+  "name": "Chronoblade Edge",
+  "index": 1,
+  "gear_family": "Swords",
+  "applies_to": "All swords (wood through netherite, including modded smithing variants)",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Consecutive strikes within 4s gain +6% melee damage and inflict a 5% slow for 1s."
+    },
+    {
+      "level": 2,
+      "summary": "Bonus increases to +10% (stacking twice) and adds bleed for 2 damage over 2s."
+    },
+    {
+      "level": 3,
+      "summary": "Bonus reaches +14% (stacking three times); bleed deals 3 damage over 3s and slow becomes 10% for 1.5s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Echo Shard",
+        "Netherite Ingot",
+        "Echo Shard"
+      ],
+      [
+        "Dragon Breath",
+        "Enchanted Book",
+        "Dragon Breath"
+      ],
+      [
+        "Nether Star",
+        "Smithing Template: Netherite Upgrade",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:chronoblade_edge"
+    }
+  }
+}

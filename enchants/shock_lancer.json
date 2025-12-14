@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:shock_lancer",
+  "slug": "shock_lancer",
+  "name": "Shock Lancer",
+  "index": 50,
+  "gear_family": "Maces",
+  "applies_to": "Maces",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Holding charge (right-click) for 1s converts the next hit into a lunging strike with +25% damage and 2-block reach."
+    },
+    {
+      "level": 2,
+      "summary": "Charge time 0.7s, damage bonus +40%, reach 3 blocks and applies Slowness I for 3s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Wind Charge",
+        "Breeze Rod",
+        "Wind Charge"
+      ],
+      [
+        "Ominous Trial Key",
+        "Enchanted Book",
+        "Ominous Trial Key"
+      ],
+      [
+        "Netherite Scrap",
+        "Heavy Core",
+        "Netherite Scrap"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:shock_lancer"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "required": false,
+  "package": "com.carter.newenchants.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BowItemMixin",
+    "CrossbowItemMixin",
+    "PersistentProjectileEntityMixin",
+    "TridentItemMixin",
+    "FishingRodItemMixin",
+    "FireworkRocketEntityMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

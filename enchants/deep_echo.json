@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:deep_echo",
+  "slug": "deep_echo",
+  "name": "Deep Echo",
+  "index": 23,
+  "gear_family": "Pickaxes",
+  "applies_to": "All pickaxes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Mining sculk reduces Warden anger by 5 and grants Darkness immunity for 3s."
+    },
+    {
+      "level": 2,
+      "summary": "Anger reduction becomes 8, immunity lasts 5s, and grants Vibration highlighting for 4s."
+    },
+    {
+      "level": 3,
+      "summary": "Anger reduction becomes 12, immunity lasts 7s, and grants +10% mining speed below Y=0."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Sculk Catalyst",
+        "Calibrated Sculk Sensor",
+        "Sculk Catalyst"
+      ],
+      [
+        "Echo Shard",
+        "Enchanted Book",
+        "Echo Shard"
+      ],
+      [
+        "Resonance Shard",
+        "Nether Star",
+        "Resonance Shard"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:deep_echo"
+    }
+  }
+}

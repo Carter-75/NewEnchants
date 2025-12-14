@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:aether_salvo",
+  "slug": "aether_salvo",
+  "name": "Aether Salvo",
+  "index": 13,
+  "gear_family": "Crossbows",
+  "applies_to": "All crossbows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Jump-shotting spawns one spectral bolt dealing 1 heart true damage (8s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Two spectral bolts spawn, each 1 heart true damage, cooldown 6s."
+    },
+    {
+      "level": 3,
+      "summary": "Three spectral bolts spawn; the final bolt inflicts Levitation I for 0.5s, cooldown 5s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Phantom Membrane",
+        "Breeze Rod",
+        "Phantom Membrane"
+      ],
+      [
+        "Spectral Arrow",
+        "Enchanted Book",
+        "Spectral Arrow"
+      ],
+      [
+        "Wind Charge",
+        "End Rod",
+        "Wind Charge"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:aether_salvo"
+    }
+  }
+}

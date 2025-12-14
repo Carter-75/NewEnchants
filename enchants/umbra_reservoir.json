@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:umbra_reservoir",
+  "slug": "umbra_reservoir",
+  "name": "Umbra Reservoir",
+  "index": 36,
+  "gear_family": "Chestplates",
+  "applies_to": "All chestplates",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Stores up to 10 damage as shadow charges; sneaking releases them as Resistance I for 5s per 5 stored damage."
+    },
+    {
+      "level": 2,
+      "summary": "Storage doubles to 20 damage, Resistance II for 5s, and releases a 2-heart retaliatory burst."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Crying Obsidian",
+        "Echo Shard",
+        "Crying Obsidian"
+      ],
+      [
+        "Reinforced Deepslate",
+        "Enchanted Book",
+        "Reinforced Deepslate"
+      ],
+      [
+        "Nether Star",
+        "Ominous Bottle",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:umbra_reservoir"
+    }
+  }
+}

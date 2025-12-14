@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:dune_veil",
+  "slug": "dune_veil",
+  "name": "Dune Veil",
+  "index": 25,
+  "gear_family": "Shovels",
+  "applies_to": "All shovels",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Grants immunity to suffocation from sand, gravel, and powder snow while held; also adds +2 hearts absorption in deserts."
+    },
+    {
+      "level": 2,
+      "summary": "Absorption increases to 4 hearts, and powder snow grants Haste II for 5s after escape."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Powder Snow Bucket",
+        "Breeze Rod",
+        "Powder Snow Bucket"
+      ],
+      [
+        "Smithing Template: Eye Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Eye Armor Trim"
+      ],
+      [
+        "Ominous Trial Key",
+        "Netherite Scrap",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:dune_veil"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:storm_anchor",
+  "slug": "storm_anchor",
+  "name": "Storm Anchor",
+  "index": 29,
+  "gear_family": "Tridents",
+  "applies_to": "Tridents",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Channeling lightning grants Resistance I and Fire Resistance I for 3s."
+    },
+    {
+      "level": 2,
+      "summary": "Grants Resistance II for 4s and chains 1 heart lightning damage to nearby mobs in water."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Lightning Rod",
+        "Breeze Rod",
+        "Lightning Rod"
+      ],
+      [
+        "Ominous Trial Key",
+        "Enchanted Book",
+        "Ominous Trial Key"
+      ],
+      [
+        "Nether Star",
+        "Heart of the Sea",
+        "Nether Star"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:storm_anchor"
+    }
+  }
+}

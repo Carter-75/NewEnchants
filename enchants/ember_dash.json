@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:ember_dash",
+  "slug": "ember_dash",
+  "name": "Ember Dash",
+  "index": 42,
+  "gear_family": "Boots",
+  "applies_to": "All boots",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Jumping while sprinting emits a 4-block fire trail for 2s and grants Fire Resistance for 2s."
+    },
+    {
+      "level": 2,
+      "summary": "Trail lasts 3s, damage doubles, Fire Resistance lasts 4s and negates magma damage."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Magma Block",
+        "Blaze Rod",
+        "Magma Block"
+      ],
+      [
+        "Lava Bucket",
+        "Enchanted Book",
+        "Lava Bucket"
+      ],
+      [
+        "Ominous Trial Key",
+        "Ancient Debris",
+        "Ominous Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:ember_dash"
+    }
+  }
+}

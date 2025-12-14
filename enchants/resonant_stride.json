@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:resonant_stride",
+  "slug": "resonant_stride",
+  "name": "Resonant Stride",
+  "index": 37,
+  "gear_family": "Leggings",
+  "applies_to": "All leggings",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Sprinting generates vibration pings every 6s that reveal mobs within 8 blocks."
+    },
+    {
+      "level": 2,
+      "summary": "Interval drops to 4s, radius 12 blocks, grants +10% movement speed after a ping for 3s."
+    },
+    {
+      "level": 3,
+      "summary": "Interval 3s, radius 16 blocks, grants +15% speed and Jump Boost I for 4s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Calibrated Sculk Sensor",
+        "Echo Shard",
+        "Calibrated Sculk Sensor"
+      ],
+      [
+        "Smithing Template: Ward Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Ward Armor Trim"
+      ],
+      [
+        "Trial Key",
+        "Heavy Core",
+        "Trial Key"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:resonant_stride"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:radiant_execution",
+  "slug": "radiant_execution",
+  "name": "Radiant Execution",
+  "index": 4,
+  "gear_family": "Swords & Axes",
+  "applies_to": "All swords and axes",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "+15% damage against undead. Kills trigger a 3-block holy pulse dealing 4 magic damage to undead only."
+    },
+    {
+      "level": 2,
+      "summary": "+25% damage; pulse deals 6 damage and applies Weakness I for 4s."
+    },
+    {
+      "level": 3,
+      "summary": "+35% damage; pulse deals 8 damage, ignites undead for 4s, and grants the wielder Absorption I for 5s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Blaze Rod",
+        "Smithing Template: Spire Armor Trim",
+        "Blaze Rod"
+      ],
+      [
+        "Glowstone Block",
+        "Enchanted Book",
+        "Glowstone Block"
+      ],
+      [
+        "Totem of Undying",
+        "Amethyst Cluster",
+        "Totem of Undying"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:radiant_execution"
+    }
+  }
+}

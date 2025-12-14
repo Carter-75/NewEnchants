@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:siege_ram",
+  "slug": "siege_ram",
+  "name": "Siege Ram",
+  "index": 14,
+  "gear_family": "Crossbows",
+  "applies_to": "All crossbows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Bolts deal +30% damage to shields, golems, and reinforced doors; shield break threshold reduced to 5 hits."
+    },
+    {
+      "level": 2,
+      "summary": "+45% structure damage, shield break in 4 hits, bolts gain Punch II when fully charged."
+    },
+    {
+      "level": 3,
+      "summary": "+60% structure damage, shield break in 3 hits, bolts pierce one solid block before stopping."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Ancient Debris",
+        "Trial Key",
+        "Ancient Debris"
+      ],
+      [
+        "Reinforced Deepslate",
+        "Enchanted Book",
+        "Reinforced Deepslate"
+      ],
+      [
+        "Block of Netherite",
+        "Heavy Core",
+        "Block of Netherite"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:siege_ram"
+    }
+  }
+}

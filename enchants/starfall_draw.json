@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:starfall_draw",
+  "slug": "starfall_draw",
+  "name": "Starfall Draw",
+  "index": 10,
+  "gear_family": "Bows",
+  "applies_to": "All bows",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Fully charged arrows create a falling starlight shard that deals 2 magic damage on landing (10s cooldown)."
+    },
+    {
+      "level": 2,
+      "summary": "Shard damage rises to 3, explosion radius 2 blocks, cooldown 8s."
+    },
+    {
+      "level": 3,
+      "summary": "Shard damage hits 4, radius 3 blocks, cooldown 6s and grants Night Vision for 5s after activation."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Chorus Flower",
+        "End Crystal",
+        "Chorus Flower"
+      ],
+      [
+        "Prismarine Shard",
+        "Enchanted Book",
+        "Prismarine Shard"
+      ],
+      [
+        "Dragon Breath",
+        "Heart of the Sea",
+        "Dragon Breath"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:starfall_draw"
+    }
+  }
+}

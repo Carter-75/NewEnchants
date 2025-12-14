@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:bastion_lattice",
+  "slug": "bastion_lattice",
+  "name": "Bastion Lattice",
+  "index": 38,
+  "gear_family": "Leggings",
+  "applies_to": "All leggings",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Reduces knockback taken by 25% and converts 10% of fall damage into absorption."
+    },
+    {
+      "level": 2,
+      "summary": "Knockback reduction 45%, fall damage conversion 25%, and piglins stay neutral while crouching."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Gilded Blackstone",
+        "Ancient Debris",
+        "Gilded Blackstone"
+      ],
+      [
+        "Piglin Head",
+        "Enchanted Book",
+        "Piglin Head"
+      ],
+      [
+        "Netherite Ingot",
+        "Ominous Trial Key",
+        "Netherite Ingot"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:bastion_lattice"
+    }
+  }
+}

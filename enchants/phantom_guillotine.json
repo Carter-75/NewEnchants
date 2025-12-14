@@ -1,0 +1,47 @@
+{
+  "id": "newenchants:phantom_guillotine",
+  "slug": "phantom_guillotine",
+  "name": "Phantom Guillotine",
+  "index": 5,
+  "gear_family": "Swords",
+  "applies_to": "All swords",
+  "max_level": 3,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "After sprinting or gliding for 2s, the next hit within 4s counts as a critical and adds a phantom slash for 2 magic damage."
+    },
+    {
+      "level": 2,
+      "summary": "Requirement drops to 1.5s, phantom slash deals 3 damage, and grants 0.5s invisibility on hit."
+    },
+    {
+      "level": 3,
+      "summary": "Phantom slash deals 4 damage, grants 1s invisibility, and silences Wardens for 3s."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Phantom Membrane",
+        "Echo Shard",
+        "Phantom Membrane"
+      ],
+      [
+        "Smithing Template: Ward Armor Trim",
+        "Enchanted Book",
+        "Smithing Template: Ward Armor Trim"
+      ],
+      [
+        "Amethyst Shard",
+        "Dragon Breath",
+        "Amethyst Shard"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:phantom_guillotine"
+    }
+  }
+}

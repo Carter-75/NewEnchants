@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "newenchants",
+  "version": "${version}",
+  "name": "New Enchants",
+  "description": "Adds 50 late-game Fabric enchantments with active abilities, visual effects, and crafting recipes.",
+  "authors": ["Carter", "NewEnchants Automation"]
+  ,
+  "contact": {
+    "sources": "https://github.com/Carter-75/NewEnchants"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.carter.newenchants.NewEnchantsMod"],
+    "client": ["com.carter.newenchants.client.NewEnchantsClient"]
+  },
+  "mixins": [
+    "newenchants.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "minecraft": "1.21.1",
+    "fabric-api": ">=0.104.0",
+    "java": ">=21"
+  }
+}

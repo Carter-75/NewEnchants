@@ -1,0 +1,43 @@
+{
+  "id": "newenchants:riftwalker_steps",
+  "slug": "riftwalker_steps",
+  "name": "Riftwalker Steps",
+  "index": 40,
+  "gear_family": "Boots",
+  "applies_to": "All boots",
+  "max_level": 2,
+  "effects": [
+    {
+      "level": 1,
+      "summary": "Double-tapping jump blinks 3 blocks forward (does not climb walls), 12s cooldown."
+    },
+    {
+      "level": 2,
+      "summary": "Blink range 4 blocks, cooldown 8s, and grants 2s Slow Falling."
+    }
+  ],
+  "recipe": {
+    "type": "shaped_book",
+    "rows": [
+      [
+        "Chorus Fruit",
+        "Ender Pearl",
+        "Chorus Fruit"
+      ],
+      [
+        "Shulker Shell",
+        "Enchanted Book",
+        "Shulker Shell"
+      ],
+      [
+        "Echo Shard",
+        "Nether Star",
+        "Echo Shard"
+      ]
+    ],
+    "result": {
+      "item": "minecraft:enchanted_book",
+      "stored_enchantment": "newenchants:riftwalker_steps"
+    }
+  }
+}
